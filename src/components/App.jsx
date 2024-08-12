@@ -14,7 +14,7 @@ function App() {
   }, []);
   return (
     <div className="bg-gradient-to-t from-gray-900 via-cyan-500   to-gray-900">
-      <CardGrid cards={cards} />
+      <CardGrid cards={cards} setCards={setCards} />
     </div>
   );
 }
