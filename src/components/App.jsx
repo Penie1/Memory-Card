@@ -1,6 +1,7 @@
 import { fetchData } from "../utils/api";
 import { shuffleArr } from "../utils/shuffleArray";
 import { useEffect, useState } from "react";
+import CardGrid from "./CardGrid";
 function App() {
   const [cards, setCards] = useState([]);
 
@@ -12,11 +13,9 @@ function App() {
     getCards();
   }, []);
   return (
-    <>
-      {cards.map((c) => (
-        <h1 key={c.id}>{c.name}</h1>
-      ))}
-    </>
+    <div className="bg-gradient-to-t from-gray-900 via-cyan-500   to-gray-900">
+      <CardGrid cards={cards} />
+    </div>
   );
 }
 
