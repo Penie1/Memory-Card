@@ -3,6 +3,7 @@ import { shuffleArr } from "../utils/shuffleArray";
 import { useEffect, useState } from "react";
 import CardGrid from "./CardGrid";
 import Header from "./Header";
+import Footer from "./Footer";
 
 function App() {
   const [cards, setCards] = useState([]);
@@ -40,6 +41,7 @@ function App() {
     <div className="bg-gradient-to-t from-gray-900 via-cyan-500   to-gray-900">
       <Header currentScore={currentScore} bestScore={bestScore} />
       <CardGrid onClick={handleOnClick} cards={cards} setCards={setCards} />
+      <Footer />
     </div>
   );
 }
