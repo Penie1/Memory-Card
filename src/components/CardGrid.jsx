@@ -2,14 +2,14 @@ import Card from "./Card";
 import PropTypes from "prop-types";
 export default function CardGrid({ cards, onClick }) {
   return (
-    <div className=" grid grid-cols-2 md:grid-cols-3 justify-items-center gap-8 p-5  mb-12">
+    <div className=" flex justify-center gap-8 p-5 mb-12">
       {cards.map((card) => (
         <Card
           id={card.id}
           onClick={onClick(card.id)}
           key={card.id}
           image={card.image}
-          name={card.name}
+          name={card.name.split(" ")[0]}
         />
       ))}
     </div>
