@@ -2,7 +2,7 @@ import Card from "./Card";
 import PropTypes from "prop-types";
 export default function CardGrid({ cards, onClick }) {
   return (
-    <div className=" flex justify-center gap-8 p-5 mb-12">
+    <div className=" grid md:grid-cols-4  grid-cols-2 justify-items-center md:gap-8 gap-4 p-5 mb-12 ">
       {cards.map((card) => (
         <Card
           id={card.id}

@@ -12,7 +12,7 @@ function App() {
   const currentScore = score.length ? score.length : 0;
   const cardsArr = [];
   if (cards.length !== 0) {
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
       cardsArr.push(cards[i]);
     }
   }
